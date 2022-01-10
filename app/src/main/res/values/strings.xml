@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">szyfrator</string>
+    <string name="pod">Podstawieniowe</string>
+    <string name="cezar">Cezara</string>
+    <string name="mors">Morse\'a</string>
+    <string name="plotkowy">Płotkowy</string>
+    <string-array name="szyfry">
+        <item>Gaderypoluki</item>
+        <item>Koniecmatury</item>
+    </string-array>
+</resources>

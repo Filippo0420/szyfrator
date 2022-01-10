@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tekst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Szyfry: "
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/podstawieniowe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tekst1"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pod"/>
+
+    <Button
+        android:id="@+id/mors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/mors"
+        android:layout_below="@id/podstawieniowe"/>
+
+
+    <Button
+        android:id="@+id/cezar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cezar"
+        android:layout_below="@id/mors"/>
+
+    <Button
+        android:id="@+id/plotkowy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/plotkowy"
+        android:layout_below="@id/cezar"/>
+
+
+
+
+
+</RelativeLayout>

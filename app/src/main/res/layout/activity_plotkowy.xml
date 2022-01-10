@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlotkowyActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tekst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Szyfr Płotkowy"
+        android:textSize="24sp"/>
+
+
+
+    <TextView
+        android:id="@+id/tekst2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tekst1"
+        android:text="Wprowadź tekst do zaszyfrowania: "
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/wejscie32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tekst2"/>
+
+    <TextView
+        android:id="@+id/wyjscie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wejscie32"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/szyfruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wyjscie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="szyfruj/odszyfruj"/>
+
+</RelativeLayout>
