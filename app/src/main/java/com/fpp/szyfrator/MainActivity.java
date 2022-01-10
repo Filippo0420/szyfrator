@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //Intent cez = new Intent(MainActivity.this, CezarActivity.class);
-                //startActivity(cez);
+                Intent cez = new Intent(MainActivity.this, CezarActivity.class);
+                startActivity(cez);
             }
         });
 

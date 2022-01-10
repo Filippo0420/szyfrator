@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CezarActivity">
+    tools:context=".CezarActivity"
+    android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/szyfr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Szyfr Cezara"
+        android:textSize="28sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/wprowadz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/szyfr"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/klucztxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Przesunięcie: "
+        android:textSize="23sp"
+        android:layout_below="@id/wprowadz"/>
+
+    <SeekBar
+        android:id="@+id/klucz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/klucztxt"
+        android:min="0"
+        android:max="26"/>
+
+    <TextView
+        android:id="@+id/wyswietl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/klucz"
+        android:textSize="26sp"
+        android:background="@color/gray"/>
+
+    <Button
+        android:id="@+id/szyfruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:text="szyfruj"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/wyswietl"/>
+
+    <Button
+        android:id="@+id/deszyfruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deszyfruj"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/szyfruj"
+        android:layout_below="@id/wyswietl"/>
+
+</RelativeLayout>
