@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class PodstawienioweActivity extends AppCompatActivity {
 
     private Spinner szyfrPod;
@@ -72,7 +74,7 @@ public class PodstawienioweActivity extends AppCompatActivity {
 
         String[] kolejne = new String[szyfr.length()];
 
-        tekst.toLowerCase();
+        tekst = tekst.toLowerCase(Locale.ROOT);
 
         kolejne[0] = tekst.replaceAll(szyfr.substring(0, 1), szyfr.substring(1, 2).toUpperCase()); // pierwsza na druga
         kolejne[1] = kolejne[0].replaceAll(szyfr.substring(1, 2), szyfr.substring(0, 1).toUpperCase()); // druga na pierwsza
