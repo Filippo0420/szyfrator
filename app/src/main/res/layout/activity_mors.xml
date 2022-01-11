@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout class="androidx.appcompat.app.AlertController$RecycleListView" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MorsActivity"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/wroc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wróć"/>
+
+    <TextView
+        android:id="@+id/szyfr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Szyfr Morse'a"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_below="@id/wroc"
+        />
+
+    <EditText
+        android:id="@+id/wprowadz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/szyfr"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/wyswietl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/wprowadz"
+        android:textSize="26sp"
+        android:background="@color/gray"/>
+
+    <Button
+        android:id="@+id/szyfruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="szyfruj"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/wyswietl"/>
+
+    <Button
+        android:id="@+id/deszyfruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deszyfruj"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/szyfruj"
+        android:layout_below="@id/wyswietl"/>
+
+</RelativeLayout>

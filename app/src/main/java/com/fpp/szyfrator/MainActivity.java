@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //Intent mor = new Intent(MainActivity.this, MorsActivity.class);
-                //startActivity(mor);
+                Intent mor = new Intent(MainActivity.this, MorsActivity.class);
+                startActivity(mor);
             }
         });
 

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Szyfrator">
         <activity
+            android:name=".MorsActivity"
+            android:exported="false" />
+        <activity
             android:name=".CezarActivity"
             android:exported="true" />
         <activity
