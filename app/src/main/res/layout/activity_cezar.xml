@@ -7,6 +7,12 @@
     tools:context=".CezarActivity"
     android:padding="20dp">
 
+    <Button
+        android:id="@+id/wroc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wróć"/>
+
     <TextView
         android:id="@+id/szyfr"
         android:layout_width="match_parent"
@@ -14,6 +20,7 @@
         android:text="Szyfr Cezara"
         android:textSize="28sp"
         android:gravity="center"
+        android:layout_below="@id/wroc"
         />
 
     <EditText

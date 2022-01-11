@@ -2,6 +2,7 @@ package com.fpp.szyfrator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,7 +17,7 @@ public class PodstawienioweActivity extends AppCompatActivity {
     private Spinner szyfrPod;
     private TextView jakiSzyfr, wyjscie;
     private EditText doZaszyfrowania;
-    private Button szyfruj;
+    private Button szyfruj, wroc;
     String szyfr;
 
     @Override
@@ -31,6 +32,7 @@ public class PodstawienioweActivity extends AppCompatActivity {
         doZaszyfrowania = findViewById(R.id.wejscie);
         wyjscie = findViewById(R.id.wyjscie);
         szyfruj = findViewById(R.id.szyfruj);
+        wroc = findViewById(R.id.wroc);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.szyfry, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -54,6 +56,14 @@ public class PodstawienioweActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String pobranyTekstS = doZaszyfrowania.getText().toString();
                 szyfrowanie(pobranyTekstS);
+            }
+        });
+
+        wroc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent wracaj = new Intent(PodstawienioweActivity.this, MainActivity.class);
+                startActivity(wracaj);
             }
         });
     }

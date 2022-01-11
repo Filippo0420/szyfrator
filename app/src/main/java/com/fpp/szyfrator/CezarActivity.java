@@ -2,6 +2,7 @@ package com.fpp.szyfrator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 
 public class CezarActivity extends AppCompatActivity {
 
-    private Button szyfruj, deszyfruj;
+    private Button szyfruj, deszyfruj, wroc;
     private EditText wprowadz;
     private TextView wyswietl, klucztxt;
     private SeekBar klucz;
@@ -23,6 +24,7 @@ public class CezarActivity extends AppCompatActivity {
 
         szyfruj = findViewById(R.id.szyfruj);
         deszyfruj = findViewById(R.id.deszyfruj);
+        wroc = findViewById(R.id.wroc);
         wprowadz = findViewById(R.id.wprowadz);
         wyswietl = findViewById(R.id.wyswietl);
         klucz = findViewById(R.id.klucz);
@@ -58,6 +60,14 @@ public class CezarActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 wyswietl.setText(decrypt(wprowadz.getText().toString(), klucz.getProgress()));
+            }
+        });
+
+        wroc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent wracaj = new Intent(CezarActivity.this, MainActivity.class);
+                startActivity(wracaj);
             }
         });
     }
