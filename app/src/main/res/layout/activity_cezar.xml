@@ -5,13 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CezarActivity"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:background="@color/black">
 
     <Button
         android:id="@+id/wroc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wróć"/>
+        android:text="Wróć"
+        android:textColor="@color/light_green"
+        android:backgroundTint="@color/light_black"/>
 
     <TextView
         android:id="@+id/szyfr"
@@ -21,6 +24,8 @@
         android:textSize="28sp"
         android:gravity="center"
         android:layout_below="@id/wroc"
+        android:textColor="@color/light_green"
+        android:backgroundTint="@color/light_black"
         />
 
     <EditText
@@ -29,6 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/szyfr"
         android:layout_marginTop="30dp"
+        android:background="@color/light_black"
+        android:textColor="@color/light_green"
         />
 
     <TextView
@@ -37,7 +44,8 @@
         android:layout_height="wrap_content"
         android:text="Przesunięcie: "
         android:textSize="23sp"
-        android:layout_below="@id/wprowadz"/>
+        android:layout_below="@id/wprowadz"
+        android:textColor="@color/light_green"/>
 
     <SeekBar
         android:id="@+id/klucz"
@@ -46,7 +54,9 @@
         android:layout_marginTop="20dp"
         android:layout_below="@id/klucztxt"
         android:min="0"
-        android:max="26"/>
+        android:max="26"
+        android:background="@color/light_black"
+        />
 
     <TextView
         android:id="@+id/wyswietl"
@@ -55,7 +65,8 @@
         android:layout_marginTop="20dp"
         android:layout_below="@id/klucz"
         android:textSize="26sp"
-        android:background="@color/gray"/>
+        android:background="@color/light_black"
+        android:textColor="@color/light_green"/>
 
     <Button
         android:id="@+id/szyfruj"
@@ -64,7 +75,9 @@
         android:layout_marginLeft="90dp"
         android:text="szyfruj"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/wyswietl"/>
+        android:layout_below="@id/wyswietl"
+        android:textColor="@color/light_green"
+        android:backgroundTint="@color/light_black"/>
 
     <Button
         android:id="@+id/deszyfruj"
@@ -74,6 +87,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@id/szyfruj"
-        android:layout_below="@id/wyswietl"/>
+        android:layout_below="@id/wyswietl"
+        android:textColor="@color/light_green"
+        android:backgroundTint="@color/light_black"/>
 
 </RelativeLayout>

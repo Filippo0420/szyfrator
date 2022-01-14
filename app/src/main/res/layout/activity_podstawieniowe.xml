@@ -5,13 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PodstawienioweActivity"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:background="@color/black">
 
     <Button
         android:id="@+id/wroc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wróć"/>
+        android:text="Wróć"
+        android:textColor="@color/light_green"
+        android:backgroundTint="@color/light_black"/>
 
     <TextView
         android:id="@+id/tekst1"
@@ -20,13 +23,16 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/wroc"
         android:text="Wybierz szyfr podstawieniowy"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:textColor="@color/light_green"/>
 
     <Spinner
         android:id="@+id/szyfryPod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tekst1"/>
+        android:layout_below="@id/tekst1"
+        android:textColor="@color/light_green"
+        android:backgroundTint="@color/light_green"/>
 
     <TextView
         android:id="@+id/aktualnySzyfr"
@@ -35,13 +41,16 @@
         android:layout_marginTop="40dp"
         android:layout_below="@id/szyfryPod"
         android:text="Aktualny szyfr: "
-        android:textSize="22sp"/>
+        android:textSize="22sp"
+        android:textColor="@color/light_green"/>
 
     <EditText
         android:id="@+id/wejscie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/aktualnySzyfr"/>
+        android:layout_below="@id/aktualnySzyfr"
+        android:textColor="@color/light_green"
+        android:background="@color/light_black"/>
 
     <TextView
         android:id="@+id/wyjscie"
@@ -49,7 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/wejscie"
         android:layout_marginTop="20dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textColor="@color/light_green"/>
 
     <Button
         android:id="@+id/szyfruj"
@@ -58,7 +68,9 @@
         android:layout_below="@id/wyjscie"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="szyfruj/odszyfruj"/>
+        android:text="szyfruj/odszyfruj"
+        android:textColor="@color/light_green"
+        android:backgroundTint="@color/light_black"/>
 
 
 
