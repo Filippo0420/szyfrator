@@ -33,19 +33,32 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/szyfr"
         android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
         android:textColor="@color/light_green"
         android:background="@color/light_black"
+        />
+
+    <ImageButton
+        android:id="@+id/zamiana"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/wprowadz"
+        android:src="@drawable/zmiana"
         />
 
     <TextView
         android:id="@+id/wyswietl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_below="@id/wprowadz"
-        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
         android:background="@color/light_black"
-        android:textColor="@color/light_green"/>
+        android:textColor="@color/light_green"
+        android:textSize="26sp"
+        android:clickable="true"/>
+
+
 
     <Button
         android:id="@+id/szyfruj"
@@ -62,12 +75,12 @@
         android:id="@+id/deszyfruj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="deszyfruj"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/szyfruj"
         android:layout_below="@id/wyswietl"
-        android:textColor="@color/light_green"
-        android:backgroundTint="@color/light_black"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/szyfruj"
+        android:backgroundTint="@color/light_black"
+        android:text="deszyfruj"
+        android:textColor="@color/light_green" />
 
 </RelativeLayout>
